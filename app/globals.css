@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  color:white;
+}
+.hero{
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,0.8576680672268908) 11%, rgba(0,0,0,1) 99%);
+}
