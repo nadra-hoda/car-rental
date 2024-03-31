@@ -9,6 +9,7 @@ import Deals from '../components/Deals'
 import CarList from '../components/CarList'
 import Testimonial from '../components/Testimonial'
 import Footer from '../components/Footer'
+import Link from "next/link";
 const Hero = () => {
   return (
     <div className="hero ">
@@ -24,11 +25,14 @@ const Hero = () => {
             Voluptatibus, quisquam. Ab ut officiis impedit.
           </p>
           <div className="flex items-start w-[75%] space-x-4">
+            <Link href="/rental">
             <button className="bg-gray-200 bg-opacity-20 w-[160px] h-[50px] rounded-lg font-semibold">
-              Rent Now
+             Car Renting
             </button>
+            </Link>
+           
             <button className="w-[160px] h-[50px] rounded-lg border border-white font-semibold">
-              Learn More
+              Fleet Listing
             </button>
           </div>
         </div>
@@ -73,10 +77,12 @@ const Hero = () => {
                 />
               </div>
               <div className="flex flex-col mt-9">
+                <Link href="/rental">
                 <button className="bg-gray-400 bg-opacity-30 px-8 py-2 rounded-md flex justify-center items-center">
                   <span> Search</span>
                   <FaArrowRight size={16} className="ml-3" />
                 </button>
+                </Link>
               </div>
             </div>
           </div>
